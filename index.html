@@ -1,10 +1,105 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>PYP</title>
-  </head>
-  <body>
-    <div>hello world.</div>
-  </body>
+<html>
+<head>
+	<link rel="icon" type="image/ico" href="title.png"></link> 
+
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="main.js"></script>
+		<link rel="stylesheet" href="main.css">
+		<style type="text/css">
+
+table{padding: 30px;}
+		</style>
+		</head>
+
+<body>
+<sticknav>
+    <div id="navigationbar">
+      <nav class="navbar navbar-default navbar-static-top" role="navigation">
+        <div class="navbar-header" id="blehh"> <a class="navbar-brand" href="home.html" style="color:#000; background-color:#CCC;">PyP.net</a> </div>
+        <div>
+          <ul class="nav navbar-nav">
+            <li><a href="lynda-ross.html">Lynda Ross</a></li>
+            <li><a href="jobs.html">Jobs</a></li>
+            <form class="navbar-form navbar-left" role="search" id="bleh">
+			  <div class="form-group">
+			    <input type="text" class="form-control" placeholder="Search">
+			  </div>
+			  <button type="submit" class="btn btn-default">Submit</button>
+			</form>
+			<li id="get"><a href="logout.html">Log Out</a></li>
+
+          </ul>
+        </div> 
+      </nav>
+    </div>
+  </sticknav>
+
+  <div id="mleft">
+  	<table>
+  		<tr><td><div id="blud">Projects in progress</div></td></tr>
+  		<tr colspan="2" rowspan="3"><td><img src="google.png" width="250px" height="100px"></td>
+  		<td> <strong>Name: Google<br>Title: Google Docs Head<br> Description: Work on Google docs' accessibilty.</strong></td></tr>
+<tr><td><br></td></tr>
+  		<!-- <tr><td><div id="blud">Projects in progress</div></td></tr> -->
+  		<tr colspan="2" rowspan="3"><td><img src="yah.png" width="250px" height="100px"></td>
+  		<td> <strong>Name: Google<br>Title: Google Docs Head<br> Description: Work on Google docs' accessibilty.</strong></td></tr><tr><td><br></td></tr>
+  		<tr colspan="2" rowspan="3"><td><img src="animoto.png" width="250px" height="100px"></td>
+  		<td> <strong>Name: Google<br>Title: Google Docs Head<br> Description: Work on Google docs' accessibilty.</strong></td></tr>
+
+  	</table>
+  </div>
+  <div id="mright">
+  </div>
+
+
+
+<div id="centralp">
+	<table cellpadding="30px">
+
+<tr colspan="3" rowspan="4"><td>
+	<div id="red" >	<img src="ross.jpg" width="200px" height="150px"><div id="blue"><strong>
+</strong></div></td><td></td>
+	<td rowspan="3"><div id="blue"><strong>Lynda Ross<br> <br>Ios Developer</strong></div></td>
+</tr>
+<tr><td><br></td></tr>
+<br>
+		<tr><td></td><td colspan="2"><em><div id="blud">Skill Set</div></em></td></tr>
+		<tr><td></td></tr>
+	<tr><td></td><td></td><td><div id="tgi">HTML</div><br></td>
+	<td><div id="tgi">CSS</div><br></td></tr><tr></tr><tr></tr><tr></tr><tr></tr>
+
+	<tr><td></td><td></td><td><div id="tgi">JavaScript</div><br></td>
+	<td><div id="tgi">PHP</div><br></td></tr><tr></tr><tr></tr><tr></tr><tr></tr>
+
+	<tr><td></td><td></td><td><div id="tgi">Ruby</div><br></td>
+	<td><div id="tgi">C++</div><br></td></tr><tr></tr><tr></tr><tr></tr><tr></tr>
+
+	<tr><td></td><td></td><td><div id="tgi">Jquery</div><br></td>
+	<td><div id="tgi">Actionscript</div><br></td></tr><tr></tr><tr></tr><tr></tr><tr></tr>
+	<tr><td></td><td></td><td><div id="tgi">SQL</div><br></td>
+		<td><div id="tgi">Objective C</div><br></td></tr>
+	</table>
+</div>
+
+<div id="right">
+</div>
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+    
+var aboveHeight = $('header').outerHeight();
+
+    $(window).scroll(function(){
+        if ($(window).scrollTop() > aboveHeight){
+        $('sticknav').addClass('fixed').css('top','0').next().css('padding-top','60px');
+        } else {
+       $('sticknav').removeClass('fixed').next().css('padding-top','0');
+        }
+    });
+});
+</script> 
+</body>
 </html>
